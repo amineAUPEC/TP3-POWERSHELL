@@ -1,4 +1,5 @@
 $route=$(Get-NetRoute | Where-Object -Property "RouteMetric" -eq "0" | Select-Object -Property NextHop | ForEach-Object -MemberName NextHop)
+# $route="192.168.1.254"
 $ip=$args[0]
 if  (!$route) {
     echo "Ce PC n'a pas de passerelle par défaut !"

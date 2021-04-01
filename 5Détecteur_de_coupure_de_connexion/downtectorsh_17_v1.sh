@@ -1,9 +1,10 @@
 #!/bin/bash
 while true
 do
-ping 10.0.0.1 -c 1 -W 2 &> /dev/null
+ping 192.168.1.254 -c 1 -W 2 &> /dev/null
 #sleep 10
 
+#ping 192.168.1.087 -c 1 -i 2 > /dev/null
 #echo $? aurait fournit la valeur de retour 
 	 
 if [ $? -eq 0 ]

@@ -1,4 +1,5 @@
 while (1) {
+    # ping 192.168.1.254 -n 1 -w 2 | Out-Null
     # ping 10.0.2.2 -n 1 -w 2 | Out-Null
     ping proxya.u-pec.fr -n 1 -w 2 | Out-Null
     # Write-Host -Nonewline $? #aurait fournit la valeur de retour 
